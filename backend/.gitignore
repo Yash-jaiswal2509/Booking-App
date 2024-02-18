@@ -1,5 +1,6 @@
 # Environment variables
 .env
+.env.e2e
 
 # Dependencies
 /node_modules
