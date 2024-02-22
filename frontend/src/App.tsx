@@ -4,6 +4,7 @@ import Register from "./pages/Register"
 import SingIn from "./pages/SignIn"
 import AddHotel from "./pages/AddHotel"
 import { useAppContext } from "./contexts/AppContext"
+import MyHotels from "./pages/MyHotels"
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
           <Route path="/register" element={<Layout><Register /></Layout>} />
           <Route path="/sign-in" element={<Layout><SingIn /></Layout>} />
           {isLoggedIn && <><Route path='/add-hotel' element={<Layout><AddHotel /></Layout>} /></>}
-          
+          <Route path='/my-hotels' element={<Layout><MyHotels /></Layout>} />
           <Route path="*" element={<Navigate to='/' />} />
         </Routes>
       </BrowserRouter>
